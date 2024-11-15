@@ -1,0 +1,40 @@
+{
+  "moz:geckodriverVersion": "0.34.0",
+  "timeouts": {
+    "implicit": 0,
+    "pageLoad": 300000,
+    "script": 30000
+  },
+  "moz:firefoxOptions": {
+    "args": [
+    ],
+    "prefs": {
+    }
+  },
+  "moz:headless": false,
+  "se:vncLocalAddress": "ws:\u002f\u002f172.19.0.4:7900",
+  "acceptInsecureCerts": true,
+  "browserVersion": "122.0.1",
+  "moz:processID": 152,
+  "browserName": "firefox",
+  "platformName": "linux",
+  "se:vncEnabled": true,
+  "setWindowRect": true,
+  "moz:profile": "\u002ftmp\u002frust_mozprofilekv8fY8",
+  "pageLoadStrategy": "normal",
+  "unhandledPromptBehavior": "dismiss and notify",
+  "strictFileInteractability": false,
+  "se:forwardCdp": "ws:\u002f\u002f172.19.0.4:4444\u002fsession\u002ff896e259-7ecf-471b-a97b-81d8fa823b29\u002fse\u002ffwd",
+  "se:vnc": "ws:\u002f\u002f172.19.0.4:4444\u002fsession\u002ff896e259-7ecf-471b-a97b-81d8fa823b29\u002fse\u002fvnc",
+  "moz:windowless": false,
+  "se:cdp": "ws:\u002f\u002f172.19.0.4:4444\u002fsession\u002ff896e259-7ecf-471b-a97b-81d8fa823b29\u002fse\u002fcdp",
+  "se:bidiEnabled": false,
+  "proxy": {
+  },
+  "moz:accessibilityChecks": false,
+  "moz:shutdownTimeout": 60000,
+  "se:noVncPort": 7900,
+  "moz:buildID": "20240205133611",
+  "moz:platformVersion": "5.15.153.1-microsoft-standard-WSL2",
+  "moz:webdriverClick": true
+}

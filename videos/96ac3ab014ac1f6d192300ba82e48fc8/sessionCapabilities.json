@@ -1,0 +1,39 @@
+{
+  "se:cdpVersion": "121.0.2277.128",
+  "timeouts": {
+    "implicit": 0,
+    "pageLoad": 300000,
+    "script": 30000
+  },
+  "se:vncLocalAddress": "ws:\u002f\u002f172.19.0.5:7900",
+  "webauthn:extension:credBlob": true,
+  "acceptInsecureCerts": false,
+  "browserVersion": "121.0.2277.128",
+  "se:recordVideo": true,
+  "fedcm:accounts": true,
+  "browserName": "MicrosoftEdge",
+  "platformName": "linux",
+  "ms:edgeOptions": {
+    "debuggerAddress": "localhost:38667"
+  },
+  "se:vncEnabled": true,
+  "setWindowRect": true,
+  "webauthn:extension:largeBlob": true,
+  "networkConnectionEnabled": false,
+  "msedge": {
+    "msedgedriverVersion": "121.0.2277.128 (33d347b6876564520b0f8a52257700ff5eac577f)",
+    "userDataDir": "\u002ftmp\u002f.com.microsoft.Edge.tGzAJB"
+  },
+  "pageLoadStrategy": "normal",
+  "unhandledPromptBehavior": "dismiss and notify",
+  "strictFileInteractability": false,
+  "se:forwardCdp": "ws:\u002f\u002f172.19.0.5:4444\u002fsession\u002f96ac3ab014ac1f6d192300ba82e48fc8\u002fse\u002ffwd",
+  "se:vnc": "ws:\u002f\u002f172.19.0.5:4444\u002fsession\u002f96ac3ab014ac1f6d192300ba82e48fc8\u002fse\u002fvnc",
+  "se:cdp": "ws:\u002f\u002f172.19.0.5:4444\u002fsession\u002f96ac3ab014ac1f6d192300ba82e48fc8\u002fse\u002fcdp",
+  "se:bidiEnabled": false,
+  "proxy": {
+  },
+  "webauthn:extension:minPinLength": true,
+  "webauthn:extension:prf": true,
+  "webauthn:virtualAuthenticators": true
+}

@@ -36,11 +36,11 @@ public class SanityTestHubNodes {
         WebDriverManager.edgedriver().setup();
         EdgeOptions optionEdge = new EdgeOptions();
 
-        driver = new RemoteWebDriver(new URL("http://localhost:4444"), optionEdge);
+        driver = new RemoteWebDriver(new URL("http://localhost:4444"), optionFF);
         // driver.manage().window().setSize(new Dimension(1920, 1080));
         // driver.manage().window().setPosition(new Point(620, 0));
         driver.manage().window().maximize();
-        Uninterruptibles.sleepUninterruptibly(7, TimeUnit.SECONDS);
+        Uninterruptibles.sleepUninterruptibly(10, TimeUnit.SECONDS);
         // driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com/");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -60,20 +60,27 @@ public class SanityTestHubNodes {
 
     public void login(String username, String password) {
         driver.findElement(By.id("user-name")).sendKeys(username);
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.findElement(By.id("password")).sendKeys(password);
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.findElement(By.id("login-button")).click();
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
 
     public void selectAllItems() {
         int numItems = driver.findElements(By.className("inventory_item_name")).size();
         for (int i = 0; i < numItems; i++) {
             driver.findElements(By.className("inventory_item_name")).get(i).click();
+            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
             driver.findElement(By.cssSelector("button[class='btn btn_primary btn_small btn_inventory")).click();
+            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
             driver.findElement(By.id("back-to-products")).click();
+            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         }
     }
 
     public void verifyNumberOfItemsCart(String expected) {
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         assertEquals(driver.findElement(By.className("shopping_cart_badge")).getText(), expected);
     }
 }

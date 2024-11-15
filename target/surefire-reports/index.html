@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,31 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  3 skipped,  </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.SanityTestHubNodes" class="method navigator-link" hash-for-method="test01_count_items">test01_count_items</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SanityTestParamsGridAutoSetup" class="method navigator-link" hash-for-method="test01_count_items">test01_count_items</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.SanityTestHubNodes" class="method navigator-link" hash-for-method="test01_count_items">test01_count_items</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SanityTestParamsGridAutoSetup" class="method navigator-link" hash-for-method="test01_count_items">test01_count_items</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.SanityTestHubNodes" class="method navigator-link" hash-for-method="test01_count_items">test01_count_items</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -128,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.SanityTestHubNodes</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -139,132 +139,32 @@
                   <a name="test01_count_items">
                   </a> <!-- test01_count_items -->
                   <span class="method-name">test01_count_items</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. New session request timed out 
-Host info: host: &apos;e97840176215&apos;, ip: &apos;172.18.0.2&apos;
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.153.1-microsoft-standard-WSL2&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GAKFKHBC&apos;, ip: &apos;10.100.102.153&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
-Driver info: driver.version: RemoteWebDriver
-remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=addToQueue, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=221, classLoaderName=null}, {fileName=NewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$new$0, className=org.openqa.selenium.grid.sessionqueue.NewSessionQueue, lineNumber=68, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$TemplatizedRoute, lineNumber=192, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=360, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=NewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.grid.sessionqueue.NewSessionQueue, lineNumber=128, classLoaderName=null}, {fileName=SpanWrappedHttpHandler.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.tracing.SpanWrappedHttpHandler, lineNumber=87, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=360, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=Router.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.grid.router.Router, lineNumber=87, classLoaderName=null}, {fileName=EnsureSpecCompliantResponseHeaders.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders, lineNumber=34, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=360, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=AddWebDriverSpecHeaders.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.AddWebDriverSpecHeaders, lineNumber=35, classLoaderName=null}, {fileName=ErrorFilter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.ErrorFilter, lineNumber=44, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=ErrorFilter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.ErrorFilter, lineNumber=44, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=SeleniumHandler.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$channelRead0$0, className=org.openqa.selenium.netty.server.SeleniumHandler, lineNumber=44, classLoaderName=null}, {fileName=Executors.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=539, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=run, className=java.util.concurrent.FutureTask, lineNumber=264, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1136, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=635, classLoaderName=null}, {fileName=Thread.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=run, className=java.lang.Thread, lineNumber=840, classLoaderName=null}]
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at tests.SanityTestHubNodes.setup(SanityTestHubNodes.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test01_count_items">
-                  </a> <!-- test01_count_items -->
-                  <span class="method-name">test01_count_items</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. New session request timed out 
-Host info: host: &apos;e97840176215&apos;, ip: &apos;172.18.0.2&apos;
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.153.1-microsoft-standard-WSL2&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GAKFKHBC&apos;, ip: &apos;10.100.102.153&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
-Driver info: driver.version: RemoteWebDriver
-remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=addToQueue, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=221, classLoaderName=null}, {fileName=NewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$new$0, className=org.openqa.selenium.grid.sessionqueue.NewSessionQueue, lineNumber=68, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$TemplatizedRoute, lineNumber=192, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=360, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=NewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.grid.sessionqueue.NewSessionQueue, lineNumber=128, classLoaderName=null}, {fileName=SpanWrappedHttpHandler.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.tracing.SpanWrappedHttpHandler, lineNumber=87, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=360, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=Router.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.grid.router.Router, lineNumber=87, classLoaderName=null}, {fileName=EnsureSpecCompliantResponseHeaders.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders, lineNumber=34, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=360, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=AddWebDriverSpecHeaders.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.AddWebDriverSpecHeaders, lineNumber=35, classLoaderName=null}, {fileName=ErrorFilter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.ErrorFilter, lineNumber=44, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=ErrorFilter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.ErrorFilter, lineNumber=44, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=SeleniumHandler.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$channelRead0$0, className=org.openqa.selenium.netty.server.SeleniumHandler, lineNumber=44, classLoaderName=null}, {fileName=Executors.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=539, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=run, className=java.util.concurrent.FutureTask, lineNumber=264, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1136, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=635, classLoaderName=null}, {fileName=Thread.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=run, className=java.lang.Thread, lineNumber=840, classLoaderName=null}]
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at tests.SanityTestHubNodes.setup(SanityTestHubNodes.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test01_count_items">
-                  </a> <!-- test01_count_items -->
-                  <span class="method-name">test01_count_items</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. New session request timed out 
-Host info: host: &apos;e97840176215&apos;, ip: &apos;172.18.0.2&apos;
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.153.1-microsoft-standard-WSL2&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-GAKFKHBC&apos;, ip: &apos;10.100.102.153&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
-Driver info: driver.version: RemoteWebDriver
-remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=addToQueue, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=221, classLoaderName=null}, {fileName=NewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$new$0, className=org.openqa.selenium.grid.sessionqueue.NewSessionQueue, lineNumber=68, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$TemplatizedRoute, lineNumber=192, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=360, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=NewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.grid.sessionqueue.NewSessionQueue, lineNumber=128, classLoaderName=null}, {fileName=SpanWrappedHttpHandler.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.tracing.SpanWrappedHttpHandler, lineNumber=87, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=360, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=Router.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.grid.router.Router, lineNumber=87, classLoaderName=null}, {fileName=EnsureSpecCompliantResponseHeaders.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders, lineNumber=34, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=360, classLoaderName=null}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=null}, {fileName=AddWebDriverSpecHeaders.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.AddWebDriverSpecHeaders, lineNumber=35, classLoaderName=null}, {fileName=ErrorFilter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.ErrorFilter, lineNumber=44, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=ErrorFilter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.ErrorFilter, lineNumber=44, classLoaderName=null}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=null}, {fileName=SeleniumHandler.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$channelRead0$0, className=org.openqa.selenium.netty.server.SeleniumHandler, lineNumber=44, classLoaderName=null}, {fileName=Executors.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=539, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=run, className=java.util.concurrent.FutureTask, lineNumber=264, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1136, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=635, classLoaderName=null}, {fileName=Thread.java, moduleVersion=17.0.12, nativeMethod=false, moduleName=java.base, methodName=run, className=java.lang.Thread, lineNumber=840, classLoaderName=null}]
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at tests.SanityTestHubNodes.setup(SanityTestHubNodes.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SanityTestParamsGridAutoSetup</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test01_count_items">
+                  </a> <!-- test01_count_items -->
+                  <span class="method-name">test01_count_items</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test01_count_items">
+                  </a> <!-- test01_count_items -->
+                  <span class="method-name">test01_count_items</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -284,13 +184,13 @@ remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, nat
   &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Selenium Tests with ff&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.SanityTestHubNodes&quot;/&gt;
+      &lt;class name=&quot;tests.SanityTestParamsGridAutoSetup&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Selenium Tests with ff --&gt;
   &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Selenium Tests with edge&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.SanityTestHubNodes&quot;/&gt;
+      &lt;class name=&quot;tests.SanityTestParamsGridAutoSetup&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Selenium Tests with edge --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -340,20 +240,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test01_count_items')
 data.setCell(0, 2, 'tests.SanityTestHubNodes')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 4714);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test01_count_items')
-data.setCell(1, 2, 'tests.SanityTestHubNodes')
-data.setCell(1, 3, 0);
+data.setCell(1, 2, 'tests.SanityTestParamsGridAutoSetup')
+data.setCell(1, 3, 4501);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test01_count_items')
-data.setCell(2, 2, 'tests.SanityTestHubNodes')
-data.setCell(2, 3, 0);
+data.setCell(2, 2, 'tests.SanityTestParamsGridAutoSetup')
+data.setCell(2, 3, 1519);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -379,49 +279,71 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">tests.SanityTestParamsGridAutoSetup</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startDocker</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">tests.SanityTestHubNodes</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">5187 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SanityTestParamsGridAutoSetup</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">5187 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">5188 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test01_count_items</span>
-                <span class="method-start">300847 ms</span>
+                <span class="method-start">19852 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test01_count_items</span>
-                <span class="method-start">300847 ms</span>
+                <span class="method-start">21170 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21372 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SanityTestHubNodes</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test01_count_items</span>
-                <span class="method-start">300847 ms</span>
+                <span class="method-start">23177 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SanityTestParamsGridAutoSetup</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">300850 ms</span>
+                <span class="method-start">25671 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SanityTestHubNodes</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">300850 ms</span>
+                <span class="method-start">27891 ms</span>
               </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">300850 ms</span>
-              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SanityTestParamsGridAutoSetup</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">stopDocker</span>
+                <span class="method-start">33111 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

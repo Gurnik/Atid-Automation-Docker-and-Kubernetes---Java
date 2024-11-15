@@ -11,14 +11,14 @@
     <test name="Selenium Tests with ff">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="tests.SanityTestHubNodes" />
+            <class name="tests.SanityTestParamsGridAutoSetup" />
         </classes>
     </test> <!-- Test -->
 
     <test name="Selenium Tests with edge">
         <parameter name="browser" value="edge"/>
         <classes>
-            <class name="tests.SanityTestHubNodes" />
+            <class name="tests.SanityTestParamsGridAutoSetup" />
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
