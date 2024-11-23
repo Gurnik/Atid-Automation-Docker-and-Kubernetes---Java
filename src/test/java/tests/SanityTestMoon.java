@@ -1,0 +1,77 @@
+package tests;
+
+import com.google.common.util.concurrent.Uninterruptibles;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import static org.testng.Assert.assertEquals;
+
+public class SanityTestMoon {
+    private WebDriver driver;
+
+    @BeforeClass
+    public void setup() throws MalformedURLException {
+        String moonURL = "http://127.0.0.1:58546/wd/hub";
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("moon:options", Map.of("screenResolution", "1920x1080"));
+        capabilities.setCapability("enableVNC", true);
+        driver = new RemoteWebDriver(new URL(moonURL), capabilities);
+        // driver.manage().window().setSize(new Dimension(1920, 1080));
+        // driver.manage().window().setPosition(new Point(620, 0));
+        driver.manage().window().maximize();
+        Uninterruptibles.sleepUninterruptibly(10, TimeUnit.SECONDS);
+        // driver.manage().window().maximize();
+        driver.get("https://www.saucedemo.com/");
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        login("standard_user", "secret_sauce");
+    }
+
+    @Test
+    public void test01_count_items() {
+        selectAllItems();
+        verifyNumberOfItemsCart("6");
+    }
+
+    @AfterClass
+    public void tearDown() {
+        driver.quit();
+    }
+
+    public void login(String username, String password) {
+        driver.findElement(By.id("user-name")).sendKeys(username);
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        driver.findElement(By.id("password")).sendKeys(password);
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        driver.findElement(By.id("login-button")).click();
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+    }
+
+    public void selectAllItems() {
+        int numItems = driver.findElements(By.className("inventory_item_name")).size();
+        for (int i = 0; i < numItems; i++) {
+            driver.findElements(By.className("inventory_item_name")).get(i).click();
+            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+            driver.findElement(By.cssSelector("button[class='btn btn_primary btn_small btn_inventory")).click();
+            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+            driver.findElement(By.id("back-to-products")).click();
+            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        }
+    }
+
+    public void verifyNumberOfItemsCart(String expected) {
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        assertEquals(driver.findElement(By.className("shopping_cart_badge")).getText(), expected);
+    }
+}
