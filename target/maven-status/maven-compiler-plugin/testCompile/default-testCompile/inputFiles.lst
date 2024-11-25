@@ -1,6 +1,9 @@
 C:\Automation\DockerSample\JavaProject\JavaProject\src\test\java\tests\SanityTest.java
+C:\Automation\DockerSample\JavaProject\JavaProject\src\test\java\tests\SanityTestMoon.java
 C:\Automation\DockerSample\JavaProject\JavaProject\src\test\java\tests\SanityTestParams.java
 C:\Automation\DockerSample\JavaProject\JavaProject\src\test\java\tests\SanityTestParamsGridAutoSetup.java
+C:\Automation\DockerSample\JavaProject\JavaProject\src\test\java\tests\SanityTestSelenoid.java
 C:\Automation\DockerSample\JavaProject\JavaProject\src\test\java\tests\SanityTestStandalone.java
 C:\Automation\DockerSample\JavaProject\JavaProject\src\test\java\tests\SanityTestHubNodes.java
+C:\Automation\DockerSample\JavaProject\JavaProject\src\test\java\tests\SanityTestKubernetes.java
 C:\Automation\DockerSample\JavaProject\JavaProject\src\test\java\tests\SanityTestGrid.java

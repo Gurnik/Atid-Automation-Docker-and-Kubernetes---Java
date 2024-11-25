@@ -4,7 +4,7 @@
     <test name="Selenium Tests with chrome">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="tests.SanityTestHubNodes" />
+            <class name="tests.SanityTestParamsGridAutoSetup" />
         </classes>
     </test> <!-- Test -->
 

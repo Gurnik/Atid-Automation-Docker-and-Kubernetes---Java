@@ -1,138 +1,143 @@
 Attaching to node-docker-1, selenium-hub
-selenium-hub   | 2024-11-13 21:08:27,377 INFO Included extra file "/etc/supervisor/conf.d/selenium-grid-hub.conf" during parsing
-selenium-hub   | 2024-11-13 21:08:27,381 INFO RPC interface 'supervisor' initialized
-selenium-hub   | 2024-11-13 21:08:27,381 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-selenium-hub   | 2024-11-13 21:08:27,381 INFO supervisord started with pid 8
-node-docker-1  | 2024-11-13 21:08:27,525 INFO Included extra file "/etc/supervisor/conf.d/selenium-grid-docker.conf" during parsing
-node-docker-1  | 2024-11-13 21:08:27,527 INFO RPC interface 'supervisor' initialized
-node-docker-1  | 2024-11-13 21:08:27,527 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-node-docker-1  | 2024-11-13 21:08:27,527 INFO supervisord started with pid 8
-selenium-hub   | 2024-11-13 21:08:28,383 INFO spawned: 'selenium-grid-hub' with pid 9
+selenium-hub   | 2024-11-25 19:49:56,334 INFO Included extra file "/etc/supervisor/conf.d/selenium-grid-hub.conf" during parsing
+selenium-hub   | 2024-11-25 19:49:56,339 INFO RPC interface 'supervisor' initialized
+selenium-hub   | 2024-11-25 19:49:56,339 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+selenium-hub   | 2024-11-25 19:49:56,339 INFO supervisord started with pid 8
+node-docker-1  | 2024-11-25 19:49:56,551 INFO Included extra file "/etc/supervisor/conf.d/selenium-grid-docker.conf" during parsing
+node-docker-1  | 2024-11-25 19:49:56,554 INFO RPC interface 'supervisor' initialized
+node-docker-1  | 2024-11-25 19:49:56,554 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+node-docker-1  | 2024-11-25 19:49:56,554 INFO supervisord started with pid 8
+selenium-hub   | 2024-11-25 19:49:57,342 INFO spawned: 'selenium-grid-hub' with pid 9
 selenium-hub   | Appending Selenium options: --reject-unsupported-caps false
 selenium-hub   | Tracing is disabled
-selenium-hub   | 2024-11-13 21:08:28,388 INFO success: selenium-grid-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-node-docker-1  | 2024-11-13 21:08:28,529 INFO spawned: 'socat' with pid 9
-node-docker-1  | 2024-11-13 21:08:28,531 INFO spawned: 'selenium-grid-docker' with pid 10
+selenium-hub   | 2024-11-25 19:49:57,347 INFO success: selenium-grid-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+node-docker-1  | 2024-11-25 19:49:57,556 INFO spawned: 'socat' with pid 9
+node-docker-1  | 2024-11-25 19:49:57,558 INFO spawned: 'selenium-grid-docker' with pid 10
+node-docker-1  | 2024-11-25 19:49:57,561 INFO success: socat entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+node-docker-1  | 2024-11-25 19:49:57,562 INFO success: selenium-grid-docker entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 node-docker-1  | Starting Selenium Grid Node Docker...
-node-docker-1  | 2024-11-13 21:08:28,535 INFO success: socat entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-node-docker-1  | 2024-11-13 21:08:28,535 INFO success: selenium-grid-docker entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 node-docker-1  | Tracing is disabled
-node-docker-1  | 21:08:28.807 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
-selenium-hub   | 21:08:28.805 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
-node-docker-1  | 21:08:28.812 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
-selenium-hub   | 21:08:28.812 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
-selenium-hub   | 21:08:28.907 INFO [BoundZmqEventBus.<init>] - XPUB binding to [binding to tcp://*:4442, advertising as tcp://172.19.0.2:4442], XSUB binding to [binding to tcp://*:4443, advertising as tcp://172.19.0.2:4443]
-node-docker-1  | 21:08:28.915 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
-selenium-hub   | 21:08:28.947 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://172.19.0.2:4442 and tcp://172.19.0.2:4443
-node-docker-1  | 21:08:28.951 INFO [UnboundZmqEventBus.<init>] - Sockets created
-selenium-hub   | 21:08:28.960 INFO [UnboundZmqEventBus.<init>] - Sockets created
-node-docker-1  | 21:08:29.952 INFO [UnboundZmqEventBus.<init>] - Event bus ready
-selenium-hub   | 21:08:29.961 INFO [UnboundZmqEventBus.<init>] - Event bus ready
-node-docker-1  | 21:08:30.072 INFO [NodeServer.createHandlers] - Reporting self as: http://172.19.0.3:5555
-node-docker-1  | 21:08:30.103 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
-node-docker-1  | 21:08:30.426 INFO [V141Docker.isContainerPresent] - Checking if container is present: 29af23a9ca7c
-selenium-hub   | 21:08:30.481 INFO [Hub.execute] - Started Selenium Hub 4.18.0 (revision b6bf9de7cc): http://172.19.0.2:4444
-node-docker-1  | 21:08:30.495 INFO [Docker.getImage] - Obtaining image: selenium/standalone-chrome:4.18.0-20240220
-node-docker-1  | 21:08:30.494 INFO [Docker.getImage] - Obtaining image: selenium/standalone-edge:4.18.0-20240220
-node-docker-1  | 21:08:30.494 INFO [Docker.getImage] - Obtaining image: selenium/standalone-firefox:4.18.0-20240220
-node-docker-1  | 21:08:30.511 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-chrome', tag='4.18.0-20240220', digest='null'}
-node-docker-1  | 21:08:30.511 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-firefox', tag='4.18.0-20240220', digest='null'}
-node-docker-1  | 21:08:30.511 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-edge', tag='4.18.0-20240220', digest='null'}
-node-docker-1  | 21:08:30.546 INFO [Docker.getImage] - Obtaining image: selenium/video:ffmpeg-6.1-20240220
-node-docker-1  | 21:08:30.547 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/video', tag='ffmpeg-6.1-20240220', digest='null'}
-node-docker-1  | 21:08:30.557 INFO [Docker.getImage] - Obtaining image: selenium/video:ffmpeg-6.1-20240220
-node-docker-1  | 21:08:30.557 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/video', tag='ffmpeg-6.1-20240220', digest='null'}
-node-docker-1  | 21:08:30.609 INFO [Docker.getImage] - Obtaining image: selenium/standalone-edge:4.18.0-20240220
-node-docker-1  | 21:08:30.609 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-edge', tag='4.18.0-20240220', digest='null'}
-node-docker-1  | 21:08:30.625 INFO [DockerOptions.lambda$getDockerSessionFactories$2] - Mapping Capabilities {browserName: MicrosoftEdge, platformName: linux} to docker image selenium/standalone-edge:4.18.0-20240220 16 times
-node-docker-1  | 21:08:30.625 INFO [Docker.getImage] - Obtaining image: selenium/standalone-chrome:4.18.0-20240220
-node-docker-1  | 21:08:30.626 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-chrome', tag='4.18.0-20240220', digest='null'}
-node-docker-1  | 21:08:30.638 INFO [DockerOptions.lambda$getDockerSessionFactories$2] - Mapping Capabilities {browserName: chrome, platformName: linux} to docker image selenium/standalone-chrome:4.18.0-20240220 16 times
-node-docker-1  | 21:08:30.639 INFO [Docker.getImage] - Obtaining image: selenium/standalone-firefox:4.18.0-20240220
-node-docker-1  | 21:08:30.639 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-firefox', tag='4.18.0-20240220', digest='null'}
-node-docker-1  | 21:08:30.690 INFO [DockerOptions.lambda$getDockerSessionFactories$2] - Mapping Capabilities {browserName: firefox, platformName: linux} to docker image selenium/standalone-firefox:4.18.0-20240220 16 times
-node-docker-1  | 21:08:30.769 INFO [Node.<init>] - Binding additional locator mechanisms: relative
-node-docker-1  | 21:08:30.864 INFO [NodeServer$1.start] - Starting registration process for Node http://172.19.0.3:5555
-node-docker-1  | 21:08:30.865 INFO [NodeServer.execute] - Started Selenium node 4.18.0 (revision b6bf9de7cc): http://172.19.0.3:5555
-node-docker-1  | 21:08:30.883 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
-selenium-hub   | 21:08:30.933 INFO [Node.<init>] - Binding additional locator mechanisms: relative
-selenium-hub   | 21:08:31.175 INFO [GridModel.setAvailability] - Switching Node c2466f36-20f2-45e9-8169-8d0180cf8ec5 (uri: http://172.19.0.3:5555) from DOWN to UP
-selenium-hub   | 21:08:31.176 INFO [LocalDistributor.add] - Added node c2466f36-20f2-45e9-8169-8d0180cf8ec5 at http://172.19.0.3:5555. Health check every 120s
-node-docker-1  | 21:08:31.181 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
-selenium-hub   | 21:08:31.727 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+selenium-hub   | 19:49:57.696 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+selenium-hub   | 19:49:57.701 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+selenium-hub   | 19:49:57.769 INFO [BoundZmqEventBus.<init>] - XPUB binding to [binding to tcp://*:4442, advertising as tcp://172.20.0.2:4442], XSUB binding to [binding to tcp://*:4443, advertising as tcp://172.20.0.2:4443]
+selenium-hub   | 19:49:57.819 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://172.20.0.2:4442 and tcp://172.20.0.2:4443
+selenium-hub   | 19:49:57.839 INFO [UnboundZmqEventBus.<init>] - Sockets created
+node-docker-1  | 19:49:57.859 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+node-docker-1  | 19:49:57.863 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+node-docker-1  | 19:49:57.931 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+node-docker-1  | 19:49:57.960 INFO [UnboundZmqEventBus.<init>] - Sockets created
+selenium-hub   | 19:49:58.840 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+node-docker-1  | 19:49:58.962 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+node-docker-1  | 19:49:59.058 INFO [NodeServer.createHandlers] - Reporting self as: http://172.20.0.3:5555
+node-docker-1  | 19:49:59.076 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+selenium-hub   | 19:49:59.329 INFO [Hub.execute] - Started Selenium Hub 4.18.0 (revision b6bf9de7cc): http://172.20.0.2:4444
+node-docker-1  | 19:49:59.386 INFO [V141Docker.isContainerPresent] - Checking if container is present: 75652664878a
+node-docker-1  | 19:49:59.500 INFO [Docker.getImage] - Obtaining image: selenium/standalone-edge:4.18.0-20240220
+node-docker-1  | 19:49:59.501 INFO [Docker.getImage] - Obtaining image: selenium/standalone-firefox:4.18.0-20240220
+node-docker-1  | 19:49:59.500 INFO [Docker.getImage] - Obtaining image: selenium/standalone-chrome:4.18.0-20240220
+node-docker-1  | 19:49:59.516 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-edge', tag='4.18.0-20240220', digest='null'}
+node-docker-1  | 19:49:59.516 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-firefox', tag='4.18.0-20240220', digest='null'}
+node-docker-1  | 19:49:59.516 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-chrome', tag='4.18.0-20240220', digest='null'}
+node-docker-1  | 19:49:59.550 INFO [Docker.getImage] - Obtaining image: selenium/video:ffmpeg-6.1-20240220
+node-docker-1  | 19:49:59.551 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/video', tag='ffmpeg-6.1-20240220', digest='null'}
+node-docker-1  | 19:49:59.622 INFO [Docker.getImage] - Obtaining image: selenium/video:ffmpeg-6.1-20240220
+node-docker-1  | 19:49:59.622 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/video', tag='ffmpeg-6.1-20240220', digest='null'}
+node-docker-1  | 19:49:59.639 INFO [Docker.getImage] - Obtaining image: selenium/standalone-edge:4.18.0-20240220
+node-docker-1  | 19:49:59.639 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-edge', tag='4.18.0-20240220', digest='null'}
+node-docker-1  | 19:49:59.655 INFO [DockerOptions.lambda$getDockerSessionFactories$2] - Mapping Capabilities {browserName: MicrosoftEdge, platformName: linux} to docker image selenium/standalone-edge:4.18.0-20240220 16 times
+node-docker-1  | 19:49:59.656 INFO [Docker.getImage] - Obtaining image: selenium/standalone-chrome:4.18.0-20240220
+node-docker-1  | 19:49:59.656 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-chrome', tag='4.18.0-20240220', digest='null'}
+node-docker-1  | 19:49:59.715 INFO [DockerOptions.lambda$getDockerSessionFactories$2] - Mapping Capabilities {browserName: chrome, platformName: linux} to docker image selenium/standalone-chrome:4.18.0-20240220 16 times
+node-docker-1  | 19:49:59.715 INFO [Docker.getImage] - Obtaining image: selenium/standalone-firefox:4.18.0-20240220
+node-docker-1  | 19:49:59.715 INFO [V141Docker.getImage] - Listing local images: Reference{domain='docker.io', name='selenium/standalone-firefox', tag='4.18.0-20240220', digest='null'}
+node-docker-1  | 19:49:59.731 INFO [DockerOptions.lambda$getDockerSessionFactories$2] - Mapping Capabilities {browserName: firefox, platformName: linux} to docker image selenium/standalone-firefox:4.18.0-20240220 16 times
+node-docker-1  | 19:49:59.821 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+node-docker-1  | 19:49:59.954 INFO [NodeServer$1.start] - Starting registration process for Node http://172.20.0.3:5555
+node-docker-1  | 19:49:59.954 INFO [NodeServer.execute] - Started Selenium node 4.18.0 (revision b6bf9de7cc): http://172.20.0.3:5555
+node-docker-1  | 19:49:59.974 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-hub   | 19:50:00.027 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+selenium-hub   | 19:50:00.331 INFO [GridModel.setAvailability] - Switching Node 711ea368-da24-4cdf-b711-37c83c46a8c9 (uri: http://172.20.0.3:5555) from DOWN to UP
+selenium-hub   | 19:50:00.331 INFO [LocalDistributor.add] - Added node 711ea368-da24-4cdf-b711-37c83c46a8c9 at http://172.20.0.3:5555. Health check every 120s
+node-docker-1  | 19:50:00.337 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+selenium-hub   | 19:50:00.855 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
 selenium-hub   |  [Capabilities {browserName: MicrosoftEdge, se:recordVideo: true}]
-selenium-hub   | 21:08:31.727 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+selenium-hub   | 19:50:00.855 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
 selenium-hub   |  [Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [], prefs: {}}, se:recordVideo: true}]
-node-docker-1  | 21:08:31.750 INFO [DockerSessionFactory.apply] - Starting session for Capabilities {browserName: MicrosoftEdge, se:recordVideo: true}
-node-docker-1  | 21:08:31.750 INFO [DockerSessionFactory.apply] - Creating container...
-node-docker-1  | 21:08:31.751 INFO [DockerSessionFactory.apply] - Starting session for Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [], prefs: {}}, se:recordVideo: true}
-node-docker-1  | 21:08:31.751 INFO [DockerSessionFactory.apply] - Creating container...
-node-docker-1  | 21:08:31.812 INFO [Container.<init>] - Created container eab8c129170d041235d90d5d34717c9cad1d45f6eb11cd6df4afe618309525b1
-node-docker-1  | 21:08:31.813 INFO [Container.start] - Starting container eab8c129170d041235d90d5d34717c9cad1d45f6eb11cd6df4afe618309525b1
-node-docker-1  | 21:08:31.833 INFO [Container.<init>] - Created container 96d9d493982f385ca14e4a04c6109099b90faf9815ad5f3bb5f560c86b5efab8
-node-docker-1  | 21:08:31.833 INFO [Container.start] - Starting container 96d9d493982f385ca14e4a04c6109099b90faf9815ad5f3bb5f560c86b5efab8
-node-docker-1  | 21:08:32.221 INFO [Container.inspect] - Inspecting container eab8c129170d041235d90d5d34717c9cad1d45f6eb11cd6df4afe618309525b1
-node-docker-1  | 21:08:32.229 INFO [DockerSessionFactory.apply] - Waiting for server to start (container id: eab8c129170d041235d90d5d34717c9cad1d45f6eb11cd6df4afe618309525b1, url http://172.19.0.4:4444/wd/hub)
-node-docker-1  | 21:08:32.332 INFO [Container.inspect] - Inspecting container 96d9d493982f385ca14e4a04c6109099b90faf9815ad5f3bb5f560c86b5efab8
-node-docker-1  | 21:08:32.341 INFO [DockerSessionFactory.apply] - Waiting for server to start (container id: 96d9d493982f385ca14e4a04c6109099b90faf9815ad5f3bb5f560c86b5efab8, url http://172.19.0.5:4444/wd/hub)
-selenium-hub   | 21:08:32.845 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
-selenium-hub   |  [Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [], prefs: {}}}]
-node-docker-1  | 21:08:32.853 INFO [DockerSessionFactory.apply] - Starting session for Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [], prefs: {}}}
-node-docker-1  | 21:08:32.854 INFO [DockerSessionFactory.apply] - Creating container...
-node-docker-1  | 21:08:32.881 INFO [Container.<init>] - Created container 33573be82c690059bbcdca069ce7e3131e5d476dd64c2a2fc49a72ad1301a26b
-node-docker-1  | 21:08:32.881 INFO [Container.start] - Starting container 33573be82c690059bbcdca069ce7e3131e5d476dd64c2a2fc49a72ad1301a26b
-node-docker-1  | 21:08:33.148 INFO [Container.inspect] - Inspecting container 33573be82c690059bbcdca069ce7e3131e5d476dd64c2a2fc49a72ad1301a26b
-node-docker-1  | 21:08:33.155 INFO [DockerSessionFactory.apply] - Waiting for server to start (container id: 33573be82c690059bbcdca069ce7e3131e5d476dd64c2a2fc49a72ad1301a26b, url http://172.19.0.6:4444/wd/hub)
-node-docker-1  | 21:08:34.357 INFO [DockerSessionFactory.apply] - Server is ready (container id: eab8c129170d041235d90d5d34717c9cad1d45f6eb11cd6df4afe618309525b1)
-node-docker-1  | 21:08:34.479 INFO [DockerSessionFactory.apply] - Server is ready (container id: 96d9d493982f385ca14e4a04c6109099b90faf9815ad5f3bb5f560c86b5efab8)
-node-docker-1  | 21:08:35.778 INFO [DockerSessionFactory.apply] - Server is ready (container id: 33573be82c690059bbcdca069ce7e3131e5d476dd64c2a2fc49a72ad1301a26b)
-node-docker-1  | 21:08:35.914 INFO [Container.<init>] - Created container efcafebd99a5b6e11bbe55438875d9a904f23581947f0607a2449639c5deb0c0
-node-docker-1  | 21:08:35.914 INFO [Container.start] - Starting container efcafebd99a5b6e11bbe55438875d9a904f23581947f0607a2449639c5deb0c0
-node-docker-1  | 21:08:36.210 INFO [Container.inspect] - Inspecting container efcafebd99a5b6e11bbe55438875d9a904f23581947f0607a2449639c5deb0c0
-node-docker-1  | 21:08:36.973 INFO [Container.<init>] - Created container bbd9b46a7c59348479803d29215c12e904184ffb8529814c9ed33c4ba58f4963
-node-docker-1  | 21:08:36.973 INFO [Container.start] - Starting container bbd9b46a7c59348479803d29215c12e904184ffb8529814c9ed33c4ba58f4963
-node-docker-1  | 21:08:37.262 INFO [Container.inspect] - Inspecting container bbd9b46a7c59348479803d29215c12e904184ffb8529814c9ed33c4ba58f4963
-node-docker-1  | 21:08:37.633 INFO [LocalNode.newSession] - Session created by the Node. Id: 6d603df6-d538-4bf7-9cbc-c6049b0871f4, Caps: Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:firefoxOptions: {args: [], prefs: {}}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 5.15.153.1-microsoft-standa..., moz:processID: 156, moz:profile: /tmp/rust_mozprofileYVn96Q, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.3:4444/sessio..., se:forwardCdp: ws://172.19.0.6:4444/sessio..., se:noVncPort: 7900, se:vnc: ws://172.19.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-selenium-hub   | 21:08:37.648 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: 6d603df6-d538-4bf7-9cbc-c6049b0871f4 
-selenium-hub   |  Caps: Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:firefoxOptions: {args: [], prefs: {}}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 5.15.153.1-microsoft-standa..., moz:processID: 156, moz:profile: /tmp/rust_mozprofileYVn96Q, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.19.0.3:4444/sessio..., se:forwardCdp: ws://172.19.0.6:4444/sessio..., se:noVncPort: 7900, se:vnc: ws://172.19.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-node-docker-1  | 21:08:37.737 INFO [DockerSessionFactory.startVideoContainer] - Video container started (id: efcafebd99a5b6e11bbe55438875d9a904f23581947f0607a2449639c5deb0c0)
-node-docker-1  | 21:08:37.740 INFO [LocalNode.newSession] - Session created by the Node. Id: f5bac1549a179b46627eb9357186854d, Caps: Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:43811}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: /tmp/.com.microsoft.Edge.6x...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.3:4444/sessio..., se:cdpVersion: 121.0.2277.128, se:forwardCdp: ws://172.19.0.4:4444/sessio..., se:recordVideo: true, se:vnc: ws://172.19.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-selenium-hub   | 21:08:37.749 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: f5bac1549a179b46627eb9357186854d 
-selenium-hub   |  Caps: Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:43811}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: /tmp/.com.microsoft.Edge.6x...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.19.0.3:4444/sessio..., se:cdpVersion: 121.0.2277.128, se:forwardCdp: ws://172.19.0.4:4444/sessio..., se:recordVideo: true, se:vnc: ws://172.19.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-node-docker-1  | 21:08:38.785 INFO [DockerSessionFactory.startVideoContainer] - Video container started (id: bbd9b46a7c59348479803d29215c12e904184ffb8529814c9ed33c4ba58f4963)
-node-docker-1  | 21:08:38.787 INFO [LocalNode.newSession] - Session created by the Node. Id: 587ead64-38da-4460-8d9c-811f11169add, Caps: Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:firefoxOptions: {args: [], prefs: {}}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 5.15.153.1-microsoft-standa..., moz:processID: 151, moz:profile: /tmp/rust_mozprofileO8e3o1, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.3:4444/sessio..., se:forwardCdp: ws://172.19.0.5:4444/sessio..., se:noVncPort: 7900, se:recordVideo: true, se:vnc: ws://172.19.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-selenium-hub   | 21:08:38.795 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: 587ead64-38da-4460-8d9c-811f11169add 
-selenium-hub   |  Caps: Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:firefoxOptions: {args: [], prefs: {}}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 5.15.153.1-microsoft-standa..., moz:processID: 151, moz:profile: /tmp/rust_mozprofileO8e3o1, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.19.0.3:4444/sessio..., se:forwardCdp: ws://172.19.0.5:4444/sessio..., se:noVncPort: 7900, se:recordVideo: true, se:vnc: ws://172.19.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-node-docker-1  | 21:08:48.470 INFO [Container.stop] - Stopping container efcafebd99a5b6e11bbe55438875d9a904f23581947f0607a2449639c5deb0c0
-node-docker-1  | 21:08:49.901 INFO [Container.getLogs] - Getting logs eab8c129170d041235d90d5d34717c9cad1d45f6eb11cd6df4afe618309525b1
-node-docker-1  | 21:08:49.901 INFO [V141Docker.getContainerLogs] - Getting container logs: eab8c129170d041235d90d5d34717c9cad1d45f6eb11cd6df4afe618309525b1
-node-docker-1  | 21:08:49.909 INFO [Container.stop] - Stopping container eab8c129170d041235d90d5d34717c9cad1d45f6eb11cd6df4afe618309525b1
-node-docker-1  | 21:08:52.231 INFO [Container.stop] - Stopping container bbd9b46a7c59348479803d29215c12e904184ffb8529814c9ed33c4ba58f4963
-node-docker-1  | 21:08:53.312 INFO [Container.getLogs] - Getting logs 96d9d493982f385ca14e4a04c6109099b90faf9815ad5f3bb5f560c86b5efab8
-node-docker-1  | 21:08:53.313 INFO [V141Docker.getContainerLogs] - Getting container logs: 96d9d493982f385ca14e4a04c6109099b90faf9815ad5f3bb5f560c86b5efab8
-node-docker-1  | 21:08:53.320 INFO [Container.stop] - Stopping container 96d9d493982f385ca14e4a04c6109099b90faf9815ad5f3bb5f560c86b5efab8
-node-docker-1  | 21:08:54.160 INFO [SessionSlot.stop] - Stopping session f5bac1549a179b46627eb9357186854d
-selenium-hub   | 21:08:54.163 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: f5bac1549a179b46627eb9357186854d
-selenium-hub   | 21:08:54.163 INFO [GridModel.release] - Releasing slot for session id f5bac1549a179b46627eb9357186854d
-node-docker-1  | 21:08:54.475 INFO [Container.getLogs] - Getting logs 33573be82c690059bbcdca069ce7e3131e5d476dd64c2a2fc49a72ad1301a26b
-node-docker-1  | 21:08:54.475 INFO [V141Docker.getContainerLogs] - Getting container logs: 33573be82c690059bbcdca069ce7e3131e5d476dd64c2a2fc49a72ad1301a26b
-node-docker-1  | 21:08:54.482 INFO [Container.stop] - Stopping container 33573be82c690059bbcdca069ce7e3131e5d476dd64c2a2fc49a72ad1301a26b
-node-docker-1  | 21:08:57.915 INFO [SessionSlot.stop] - Stopping session 587ead64-38da-4460-8d9c-811f11169add
-selenium-hub   | 21:08:57.916 INFO [GridModel.release] - Releasing slot for session id 587ead64-38da-4460-8d9c-811f11169add
-selenium-hub   | 21:08:57.916 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: 587ead64-38da-4460-8d9c-811f11169add
-node-docker-1  | 21:08:59.114 INFO [SessionSlot.stop] - Stopping session 6d603df6-d538-4bf7-9cbc-c6049b0871f4
-selenium-hub   | 21:08:59.116 INFO [GridModel.release] - Releasing slot for session id 6d603df6-d538-4bf7-9cbc-c6049b0871f4
-selenium-hub   | 21:08:59.116 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: 6d603df6-d538-4bf7-9cbc-c6049b0871f4
+selenium-hub   | 19:50:00.855 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+selenium-hub   |  [Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, se:recordVideo: true}]
+node-docker-1  | 19:50:00.877 INFO [DockerSessionFactory.apply] - Starting session for Capabilities {browserName: MicrosoftEdge, se:recordVideo: true}
+node-docker-1  | 19:50:00.878 INFO [DockerSessionFactory.apply] - Creating container...
+node-docker-1  | 19:50:00.878 INFO [DockerSessionFactory.apply] - Starting session for Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {args: [], prefs: {}}, se:recordVideo: true}
+node-docker-1  | 19:50:00.878 INFO [DockerSessionFactory.apply] - Creating container...
+node-docker-1  | 19:50:00.879 INFO [DockerSessionFactory.apply] - Starting session for Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, se:recordVideo: true}
+node-docker-1  | 19:50:00.879 INFO [DockerSessionFactory.apply] - Creating container...
+node-docker-1  | 19:50:00.940 INFO [Container.<init>] - Created container 2071fe784cf58a2feefb3586cae63afe5f1253f96e9956062ef80afeb92e0ba0
+node-docker-1  | 19:50:00.941 INFO [Container.start] - Starting container 2071fe784cf58a2feefb3586cae63afe5f1253f96e9956062ef80afeb92e0ba0
+node-docker-1  | 19:50:00.945 INFO [Container.<init>] - Created container 1801572f7730b39d4d17f787842eb6343cf858d7c14acb0e693dfb59b3dc65e7
+node-docker-1  | 19:50:00.946 INFO [Container.start] - Starting container 1801572f7730b39d4d17f787842eb6343cf858d7c14acb0e693dfb59b3dc65e7
+node-docker-1  | 19:50:00.966 INFO [Container.<init>] - Created container 0931f33b1a8b5a07ca2ee247f3bfe2af5012753e88c5a104538d5ab61610bedc
+node-docker-1  | 19:50:00.966 INFO [Container.start] - Starting container 0931f33b1a8b5a07ca2ee247f3bfe2af5012753e88c5a104538d5ab61610bedc
+node-docker-1  | 19:50:01.466 INFO [Container.inspect] - Inspecting container 2071fe784cf58a2feefb3586cae63afe5f1253f96e9956062ef80afeb92e0ba0
+node-docker-1  | 19:50:01.515 INFO [DockerSessionFactory.apply] - Waiting for server to start (container id: 2071fe784cf58a2feefb3586cae63afe5f1253f96e9956062ef80afeb92e0ba0, url http://172.20.0.4:4444/wd/hub)
+node-docker-1  | 19:50:01.575 INFO [Container.inspect] - Inspecting container 1801572f7730b39d4d17f787842eb6343cf858d7c14acb0e693dfb59b3dc65e7
+node-docker-1  | 19:50:01.582 INFO [DockerSessionFactory.apply] - Waiting for server to start (container id: 1801572f7730b39d4d17f787842eb6343cf858d7c14acb0e693dfb59b3dc65e7, url http://172.20.0.5:4444/wd/hub)
+node-docker-1  | 19:50:01.688 INFO [Container.inspect] - Inspecting container 0931f33b1a8b5a07ca2ee247f3bfe2af5012753e88c5a104538d5ab61610bedc
+node-docker-1  | 19:50:01.698 INFO [DockerSessionFactory.apply] - Waiting for server to start (container id: 0931f33b1a8b5a07ca2ee247f3bfe2af5012753e88c5a104538d5ab61610bedc, url http://172.20.0.6:4444/wd/hub)
+node-docker-1  | 19:50:04.139 INFO [DockerSessionFactory.apply] - Server is ready (container id: 2071fe784cf58a2feefb3586cae63afe5f1253f96e9956062ef80afeb92e0ba0)
+node-docker-1  | 19:50:04.219 INFO [DockerSessionFactory.apply] - Server is ready (container id: 1801572f7730b39d4d17f787842eb6343cf858d7c14acb0e693dfb59b3dc65e7)
+node-docker-1  | 19:50:04.390 INFO [DockerSessionFactory.apply] - Server is ready (container id: 0931f33b1a8b5a07ca2ee247f3bfe2af5012753e88c5a104538d5ab61610bedc)
+node-docker-1  | 19:50:05.453 INFO [Container.<init>] - Created container 462758a683bcc09b244f422dbc29727057ef9575854ae9bff0fd46b693ef7b5c
+node-docker-1  | 19:50:05.454 INFO [Container.start] - Starting container 462758a683bcc09b244f422dbc29727057ef9575854ae9bff0fd46b693ef7b5c
+node-docker-1  | 19:50:05.846 INFO [Container.inspect] - Inspecting container 462758a683bcc09b244f422dbc29727057ef9575854ae9bff0fd46b693ef7b5c
+node-docker-1  | 19:50:05.895 INFO [Container.<init>] - Created container b8a310acdecc5828e6d62d86f1b3fa5541390d7b647f079325963d2854da37b1
+node-docker-1  | 19:50:05.895 INFO [Container.start] - Starting container b8a310acdecc5828e6d62d86f1b3fa5541390d7b647f079325963d2854da37b1
+node-docker-1  | 19:50:06.324 INFO [Container.inspect] - Inspecting container b8a310acdecc5828e6d62d86f1b3fa5541390d7b647f079325963d2854da37b1
+node-docker-1  | 19:50:07.350 INFO [Container.<init>] - Created container c5269ad1ecb8dce8661f70468bd3e7385c256f704db167f580f1d03048652a5c
+node-docker-1  | 19:50:07.350 INFO [Container.start] - Starting container c5269ad1ecb8dce8661f70468bd3e7385c256f704db167f580f1d03048652a5c
+node-docker-1  | 19:50:07.384 INFO [DockerSessionFactory.startVideoContainer] - Video container started (id: 462758a683bcc09b244f422dbc29727057ef9575854ae9bff0fd46b693ef7b5c)
+node-docker-1  | 19:50:07.392 INFO [LocalNode.newSession] - Session created by the Node. Id: db0a488846608961b1ba5b75502ca243, Caps: Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:44851}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: /tmp/.com.microsoft.Edge.fg...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:cdpVersion: 121.0.2277.128, se:forwardCdp: ws://172.20.0.4:4444/sessio..., se:recordVideo: true, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+selenium-hub   | 19:50:07.412 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: db0a488846608961b1ba5b75502ca243 
+selenium-hub   |  Caps: Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:44851}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: /tmp/.com.microsoft.Edge.fg...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:cdpVersion: 121.0.2277.128, se:forwardCdp: ws://172.20.0.4:4444/sessio..., se:recordVideo: true, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+node-docker-1  | 19:50:07.748 INFO [Container.inspect] - Inspecting container c5269ad1ecb8dce8661f70468bd3e7385c256f704db167f580f1d03048652a5c
+node-docker-1  | 19:50:07.855 INFO [DockerSessionFactory.startVideoContainer] - Video container started (id: b8a310acdecc5828e6d62d86f1b3fa5541390d7b647f079325963d2854da37b1)
+node-docker-1  | 19:50:07.858 INFO [LocalNode.newSession] - Session created by the Node. Id: d63b0c381c5e11fb2f8b6f624c117350, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:cdpVersion: 121.0.6167.184, se:forwardCdp: ws://172.20.0.5:4444/sessio..., se:recordVideo: true, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+selenium-hub   | 19:50:07.873 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: d63b0c381c5e11fb2f8b6f624c117350 
+selenium-hub   |  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:cdpVersion: 121.0.6167.184, se:forwardCdp: ws://172.20.0.5:4444/sessio..., se:recordVideo: true, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+node-docker-1  | 19:50:09.285 INFO [DockerSessionFactory.startVideoContainer] - Video container started (id: c5269ad1ecb8dce8661f70468bd3e7385c256f704db167f580f1d03048652a5c)
+node-docker-1  | 19:50:09.292 INFO [LocalNode.newSession] - Session created by the Node. Id: 62febaa2-8ce0-4b8a-8626-e03826451dd2, Caps: Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:firefoxOptions: {args: [], prefs: {}}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 5.15.153.1-microsoft-standa..., moz:processID: 154, moz:profile: /tmp/rust_mozprofileRKxCeV, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:forwardCdp: ws://172.20.0.6:4444/sessio..., se:noVncPort: 7900, se:recordVideo: true, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+selenium-hub   | 19:50:09.359 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: 62febaa2-8ce0-4b8a-8626-e03826451dd2 
+selenium-hub   |  Caps: Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:firefoxOptions: {args: [], prefs: {}}, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 5.15.153.1-microsoft-standa..., moz:processID: 154, moz:profile: /tmp/rust_mozprofileRKxCeV, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:forwardCdp: ws://172.20.0.6:4444/sessio..., se:noVncPort: 7900, se:recordVideo: true, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+node-docker-1  | 19:50:19.596 INFO [Container.stop] - Stopping container b8a310acdecc5828e6d62d86f1b3fa5541390d7b647f079325963d2854da37b1
+node-docker-1  | 19:50:20.258 INFO [Container.stop] - Stopping container 462758a683bcc09b244f422dbc29727057ef9575854ae9bff0fd46b693ef7b5c
+node-docker-1  | 19:50:21.091 INFO [Container.getLogs] - Getting logs 1801572f7730b39d4d17f787842eb6343cf858d7c14acb0e693dfb59b3dc65e7
+node-docker-1  | 19:50:21.092 INFO [V141Docker.getContainerLogs] - Getting container logs: 1801572f7730b39d4d17f787842eb6343cf858d7c14acb0e693dfb59b3dc65e7
+node-docker-1  | 19:50:21.102 INFO [Container.stop] - Stopping container 1801572f7730b39d4d17f787842eb6343cf858d7c14acb0e693dfb59b3dc65e7
+node-docker-1  | 19:50:21.315 INFO [Container.getLogs] - Getting logs 2071fe784cf58a2feefb3586cae63afe5f1253f96e9956062ef80afeb92e0ba0
+node-docker-1  | 19:50:21.315 INFO [V141Docker.getContainerLogs] - Getting container logs: 2071fe784cf58a2feefb3586cae63afe5f1253f96e9956062ef80afeb92e0ba0
+node-docker-1  | 19:50:21.325 INFO [Container.stop] - Stopping container 2071fe784cf58a2feefb3586cae63afe5f1253f96e9956062ef80afeb92e0ba0
+node-docker-1  | 19:50:24.025 INFO [Container.stop] - Stopping container c5269ad1ecb8dce8661f70468bd3e7385c256f704db167f580f1d03048652a5c
+node-docker-1  | 19:50:25.440 INFO [SessionSlot.stop] - Stopping session d63b0c381c5e11fb2f8b6f624c117350
+selenium-hub   | 19:50:25.446 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: d63b0c381c5e11fb2f8b6f624c117350
+selenium-hub   | 19:50:25.447 INFO [GridModel.release] - Releasing slot for session id d63b0c381c5e11fb2f8b6f624c117350
+node-docker-1  | 19:50:25.592 INFO [Container.getLogs] - Getting logs 0931f33b1a8b5a07ca2ee247f3bfe2af5012753e88c5a104538d5ab61610bedc
+node-docker-1  | 19:50:25.592 INFO [V141Docker.getContainerLogs] - Getting container logs: 0931f33b1a8b5a07ca2ee247f3bfe2af5012753e88c5a104538d5ab61610bedc
+node-docker-1  | 19:50:25.601 INFO [Container.stop] - Stopping container 0931f33b1a8b5a07ca2ee247f3bfe2af5012753e88c5a104538d5ab61610bedc
+node-docker-1  | 19:50:26.044 INFO [SessionSlot.stop] - Stopping session db0a488846608961b1ba5b75502ca243
+selenium-hub   | 19:50:26.047 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: db0a488846608961b1ba5b75502ca243
+selenium-hub   | 19:50:26.047 INFO [GridModel.release] - Releasing slot for session id db0a488846608961b1ba5b75502ca243
+node-docker-1  | 19:50:29.768 INFO [SessionSlot.stop] - Stopping session 62febaa2-8ce0-4b8a-8626-e03826451dd2
+selenium-hub   | 19:50:29.769 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: 62febaa2-8ce0-4b8a-8626-e03826451dd2
+selenium-hub   | 19:50:29.769 INFO [GridModel.release] - Releasing slot for session id 62febaa2-8ce0-4b8a-8626-e03826451dd2
 node-docker-1  | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
-node-docker-1  | 2024-11-13 21:09:00,116 WARN received SIGTERM indicating exit request
-node-docker-1  | 2024-11-13 21:09:00,116 INFO waiting for socat, selenium-grid-docker to die
-node-docker-1  | 2024-11-13 21:09:01,118 INFO stopped: selenium-grid-docker (terminated by SIGTERM)
-node-docker-1  | 2024-11-13 21:09:02,120 INFO stopped: socat (terminated by SIGTERM)
+node-docker-1  | 2024-11-25 19:50:30,773 WARN received SIGTERM indicating exit request
+node-docker-1  | 2024-11-25 19:50:30,778 INFO waiting for socat, selenium-grid-docker to die
+node-docker-1  | 2024-11-25 19:50:31,783 INFO stopped: selenium-grid-docker (terminated by SIGTERM)
+node-docker-1  | 2024-11-25 19:50:32,786 INFO stopped: socat (terminated by SIGTERM)
 node-docker-1  | Shutdown complete
 [Knode-docker-1 exited with code 143
 selenium-hub   | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
-selenium-hub   | 2024-11-13 21:09:03,121 WARN received SIGTERM indicating exit request
-selenium-hub   | 2024-11-13 21:09:03,122 INFO waiting for selenium-grid-hub to die
-selenium-hub   | 2024-11-13 21:09:04,123 INFO stopped: selenium-grid-hub (terminated by SIGTERM)
+selenium-hub   | 2024-11-25 19:50:33,776 WARN received SIGTERM indicating exit request
+selenium-hub   | 2024-11-25 19:50:33,780 INFO waiting for selenium-grid-hub to die
+selenium-hub   | 2024-11-25 19:50:34,782 INFO stopped: selenium-grid-hub (terminated by SIGTERM)
 selenium-hub   | Shutdown complete
 [Kselenium-hub exited with code 143

@@ -1,6 +1,6 @@
 tests\SanityTest.class
 tests\SanityTestHubNodes.class
 tests\SanityTestParams.class
-tests\SanityTestParamsGridAutoSetup.class
 tests\SanityTestGrid.class
 tests\SanityTestStandalone.class
+tests\SanityTestParamsGridAutoSetup.class

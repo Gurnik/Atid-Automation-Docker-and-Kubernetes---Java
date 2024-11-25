@@ -2,16 +2,39 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-13T23:08:31 IST" name="Suite" finished-at="2024-11-13T23:08:59 IST" duration-ms="27931">
+  <suite started-at="2024-11-25T21:50:00 IST" name="Suite" finished-at="2024-11-25T21:50:29 IST" duration-ms="29425">
     <groups>
     </groups>
-    <test started-at="2024-11-13T23:08:31 IST" name="Selenium Tests with edge" finished-at="2024-11-13T23:08:54 IST" duration-ms="22979">
+    <test started-at="2024-11-25T21:50:00 IST" name="Selenium Tests with chrome" finished-at="2024-11-25T21:50:25 IST" duration-ms="25101">
       <class name="tests.SanityTestParamsGridAutoSetup">
-        <test-method is-config="true" signature="startDocker()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6e20b53a]" started-at="2024-11-13T23:08:26 IST" name="startDocker" finished-at="2024-11-13T23:08:31 IST" duration-ms="5173" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.SanityTestParamsGridAutoSetup@31c88ec8]" started-at="2024-11-25T21:50:00 IST" name="setup" finished-at="2024-11-25T21:50:16 IST" duration-ms="16531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test01_count_items()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@31c88ec8]" started-at="2024-11-25T21:50:16 IST" name="test01_count_items" finished-at="2024-11-25T21:50:19 IST" duration-ms="2557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01_count_items -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@31c88ec8]" started-at="2024-11-25T21:50:19 IST" name="tearDown" finished-at="2024-11-25T21:50:25 IST" duration-ms="5994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SanityTestParamsGridAutoSetup -->
+    </test> <!-- Selenium Tests with chrome -->
+    <test started-at="2024-11-25T21:50:00 IST" name="Selenium Tests with edge" finished-at="2024-11-25T21:50:26 IST" duration-ms="25702">
+      <class name="tests.SanityTestParamsGridAutoSetup">
+        <test-method is-config="true" signature="startDocker()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6c80d78a]" started-at="2024-11-25T21:49:55 IST" name="startDocker" finished-at="2024-11-25T21:50:00 IST" duration-ms="5260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDocker -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6e20b53a]" started-at="2024-11-13T23:08:31 IST" name="setup" finished-at="2024-11-13T23:08:45 IST" duration-ms="14660" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6c80d78a]" started-at="2024-11-25T21:50:00 IST" name="setup" finished-at="2024-11-25T21:50:16 IST" duration-ms="15793" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +45,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test01_count_items()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6e20b53a]" started-at="2024-11-13T23:08:45 IST" name="test01_count_items" finished-at="2024-11-13T23:08:47 IST" duration-ms="1519" status="PASS">
+        <test-method signature="test01_count_items()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6c80d78a]" started-at="2024-11-25T21:50:16 IST" name="test01_count_items" finished-at="2024-11-25T21:50:19 IST" duration-ms="2993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test01_count_items -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6e20b53a]" started-at="2024-11-13T23:08:47 IST" name="tearDown" finished-at="2024-11-13T23:08:54 IST" duration-ms="6783" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6c80d78a]" started-at="2024-11-25T21:50:19 IST" name="tearDown" finished-at="2024-11-25T21:50:26 IST" duration-ms="6888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="stopDocker()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6e20b53a]" started-at="2024-11-13T23:08:59 IST" name="stopDocker" finished-at="2024-11-13T23:09:39 IST" duration-ms="40017" status="FAIL">
+        <test-method is-config="true" signature="stopDocker()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@6c80d78a]" started-at="2024-11-25T21:50:29 IST" name="stopDocker" finished-at="2024-11-25T21:51:09 IST" duration-ms="40006" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Grid not started/teminated]]>
@@ -71,9 +94,9 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
         </test-method> <!-- stopDocker -->
       </class> <!-- tests.SanityTestParamsGridAutoSetup -->
     </test> <!-- Selenium Tests with edge -->
-    <test started-at="2024-11-13T23:08:31 IST" name="Selenium Tests with ff" finished-at="2024-11-13T23:08:57 IST" duration-ms="26731">
+    <test started-at="2024-11-25T21:50:00 IST" name="Selenium Tests with ff" finished-at="2024-11-25T21:50:29 IST" duration-ms="29425">
       <class name="tests.SanityTestParamsGridAutoSetup">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.SanityTestParamsGridAutoSetup@15ff3e9e]" started-at="2024-11-13T23:08:31 IST" name="setup" finished-at="2024-11-13T23:08:47 IST" duration-ms="15982" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.SanityTestParamsGridAutoSetup@42e99e4a]" started-at="2024-11-25T21:50:00 IST" name="setup" finished-at="2024-11-25T21:50:18 IST" duration-ms="18556" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,31 +107,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test01_count_items()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@15ff3e9e]" started-at="2024-11-13T23:08:47 IST" name="test01_count_items" finished-at="2024-11-13T23:08:51 IST" duration-ms="4501" status="PASS">
+        <test-method signature="test01_count_items()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@42e99e4a]" started-at="2024-11-25T21:50:18 IST" name="test01_count_items" finished-at="2024-11-25T21:50:23 IST" duration-ms="4534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test01_count_items -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@15ff3e9e]" started-at="2024-11-13T23:08:51 IST" name="tearDown" finished-at="2024-11-13T23:08:57 IST" duration-ms="6237" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SanityTestParamsGridAutoSetup@42e99e4a]" started-at="2024-11-25T21:50:23 IST" name="tearDown" finished-at="2024-11-25T21:50:29 IST" duration-ms="6317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.SanityTestParamsGridAutoSetup -->
     </test> <!-- Selenium Tests with ff -->
-    <test started-at="2024-11-13T23:08:31 IST" name="Selenium Tests with chrome" finished-at="2024-11-13T23:08:59 IST" duration-ms="27931">
-      <class name="tests.SanityTestHubNodes">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SanityTestHubNodes@7a69b07]" started-at="2024-11-13T23:08:31 IST" name="setup" finished-at="2024-11-13T23:08:49 IST" duration-ms="17989" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test01_count_items()[pri:0, instance:tests.SanityTestHubNodes@7a69b07]" started-at="2024-11-13T23:08:49 IST" name="test01_count_items" finished-at="2024-11-13T23:08:53 IST" duration-ms="4714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test01_count_items -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SanityTestHubNodes@7a69b07]" started-at="2024-11-13T23:08:53 IST" name="tearDown" finished-at="2024-11-13T23:08:59 IST" duration-ms="5217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.SanityTestHubNodes -->
-    </test> <!-- Selenium Tests with chrome -->
   </suite> <!-- Suite -->
 </testng-results>
