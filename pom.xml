@@ -54,7 +54,8 @@
                             <configuration>
                                 <!--testFailureIgnore>true</testFailureIgnore-->
                                 <suiteXmlFiles>
-                                    <suiteXmlFile>TestNG.xml</suiteXmlFile>
+                                    <!--suiteXmlFile>TestNG.xml</suiteXmlFile-->
+                                    <suiteXmlFile>TestNG_Kubernetes.xml</suiteXmlFile>
                                 </suiteXmlFiles>
                             </configuration>
                         </plugin>
